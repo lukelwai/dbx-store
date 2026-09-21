@@ -64,6 +64,14 @@
     "zh-CN": {
       "name": "DBX 工具箱",
       "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
+    },
+    "en": {
+      "name": "DBX Toolbox",
+      "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally."
+    },
+    "zh": {
+      "name": "DBX 工具箱",
+      "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
     }
   }
 }

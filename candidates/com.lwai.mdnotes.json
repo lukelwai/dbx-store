@@ -3,8 +3,8 @@
   "id": "com.lwai.mdnotes",
   "publisher": "lwai",
   "version": "0.7.1",
-  "name": "MD 笔记",
-  "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。",
+  "name": "MD Notes",
+  "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system.",
   "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/v0.7.1/assets/plugin.svg",
   "tags": [
     "md",
@@ -38,5 +38,19 @@
       "sha256": "297c44fa68d903c4116de26f3ffb54fa99b0cf42b8a61f94b01dba629b1de1e4",
       "size": 2392641
     }
-  ]
+  ],
+  "localizations": {
+    "en": {
+      "name": "MD Notes",
+      "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system."
+    },
+    "zh-CN": {
+      "name": "MD 笔记",
+      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+    },
+    "zh": {
+      "name": "MD 笔记",
+      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+    }
+  }
 }

@@ -90,6 +90,14 @@
         "zh-CN": {
           "name": "JSON 格式化工具",
           "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
+        },
+        "en": {
+          "name": "JSON Formatter",
+          "description": "Format, minify, fold, escape, import and export JSON. Pure frontend; all data stays on your machine."
+        },
+        "zh": {
+          "name": "JSON 格式化工具",
+          "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
         }
       }
     },
@@ -1703,13 +1711,21 @@
         "zh-CN": {
           "name": "LDAP Studio",
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+        },
+        "en": {
+          "name": "LDAP Studio",
+          "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
+        },
+        "zh": {
+          "name": "LDAP Studio",
+          "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
         }
       }
     },
     {
       "id": "io.dbx.nintyapi",
       "name": "NintyAPI",
-      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
       "publisher": "nintycat",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/icon.svg",
@@ -2423,6 +2439,14 @@
         "zh-CN": {
           "name": "DBX 工具箱",
           "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
+        },
+        "en": {
+          "name": "DBX Toolbox",
+          "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally."
+        },
+        "zh": {
+          "name": "DBX 工具箱",
+          "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
         }
       }
     },
@@ -2659,6 +2683,14 @@
       ],
       "localizations": {
         "zh-CN": {
+          "name": "ExcelX",
+          "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
+        },
+        "en": {
+          "name": "ExcelX",
+          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
+        },
+        "zh": {
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
         }
@@ -3972,6 +4004,14 @@
       ],
       "localizations": {
         "zh-CN": {
+          "name": "Dev Tools",
+          "description": "沙箱离线运行，零权限——40 个开发工具，约 100KB：生成器（密码/二维码/条码/ID/RSA 密钥/TOTP/占位图）、编解码（Base64/Base58/URL/转义/Punycode/Data URI）、安全（哈希/HMAC/JWT/AES/证书解析）、文本工具（JSON/对比/正则/行处理/乱码修复）等。"
+        },
+        "en": {
+          "name": "Dev Tools",
+          "description": "Sandboxed, offline, zero permissions — 40 tools at ~100KB: generators (password/QR/barcode/ID/RSA/TOTP/placeholder), codecs (Base64/Base58/URL/escape/punycode/data-URI), crypto (hash/HMAC/JWT/AES/certificate), text tools (JSON/diff/regex/lines/mojibake) and more."
+        },
+        "zh": {
           "name": "Dev Tools",
           "description": "沙箱离线运行，零权限——40 个开发工具，约 100KB：生成器（密码/二维码/条码/ID/RSA 密钥/TOTP/占位图）、编解码（Base64/Base58/URL/转义/Punycode/Data URI）、安全（哈希/HMAC/JWT/AES/证书解析）、文本工具（JSON/对比/正则/行处理/乱码修复）等。"
         }
