@@ -80,6 +80,11 @@
       "repository": "tenltrs/dbx-calendar",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "lukelwai/dbx-md-notes",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
