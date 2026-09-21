@@ -1,10 +1,9 @@
 {
-  "schemaVersion": 1,
   "id": "com.lwai.mdnotes",
-  "publisher": "lwai",
-  "version": "0.7.1",
   "name": "MD Notes",
   "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system.",
+  "publisher": "lwai",
+  "verified": false,
   "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/v0.7.1/assets/plugin.svg",
   "tags": [
     "md",
@@ -18,25 +17,35 @@
   "source": "https://github.com/lukelwai/dbx-md-notes/tree/v0.7.1",
   "homepage": "https://github.com/lukelwai/dbx-md-notes",
   "license": "Apache-2.0",
-  "releaseNotes": "Initial release.",
-  "targets": [
+  "latestVersion": "0.7.1",
+  "versions": [
     {
-      "target": "darwin-arm64",
-      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/v0.7.1/com.lwai.mdnotes-0.7.1-darwin-arm64.dbxp",
-      "sha256": "e235fd681802d55a7095ee4b370990d29b9ffc7627202f73ff2aed1734e6f8c3",
-      "size": 2252092
-    },
-    {
-      "target": "linux-x64",
-      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/v0.7.1/com.lwai.mdnotes-0.7.1-linux-x64.dbxp",
-      "sha256": "b81173504256bbe62abbec0bed22f8d549758f9a97ae5c0857f80d86a0c197a0",
-      "size": 2334351
-    },
-    {
-      "target": "windows-x64",
-      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/v0.7.1/com.lwai.mdnotes-0.7.1-windows-x64.dbxp",
-      "sha256": "297c44fa68d903c4116de26f3ffb54fa99b0cf42b8a61f94b01dba629b1de1e4",
-      "size": 2392641
+      "version": "0.7.1",
+      "releasedAt": "2026-09-21T17:30:27.458Z",
+      "releaseNotes": "Initial release.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/com.lwai.mdnotes-0.7.1-darwin-arm64.dbxp",
+          "sha256": "ba1f9a98e17eff97449615fdc7addc85ca252846ce1cc84fe9818b809fe2654b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2252975
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/com.lwai.mdnotes-0.7.1-linux-x64.dbxp",
+          "sha256": "a0ebd4026a7135c9d54aedcf85e9c7719133e8886605019aa82fd9fe75a369e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2335231
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/com.lwai.mdnotes-0.7.1-windows-x64.dbxp",
+          "sha256": "467218e5e15f307a21d51a38be8ff6143ed70231c50e9abb44d79f23289cbd84",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2393529
+        }
+      ]
     }
   ],
   "localizations": {
