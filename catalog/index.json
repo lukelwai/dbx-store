@@ -90,14 +90,6 @@
         "zh-CN": {
           "name": "JSON 格式化工具",
           "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
-        },
-        "en": {
-          "name": "JSON Formatter",
-          "description": "Format, minify, fold, escape, import and export JSON. Pure frontend; all data stays on your machine."
-        },
-        "zh": {
-          "name": "JSON 格式化工具",
-          "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
         }
       }
     },
@@ -340,11 +332,11 @@
     },
     {
       "id": "com.yiqiui.leetcode-cn",
-      "name": "LeetCode Practice",
-      "description": "Sign in to your LeetCode (leetcode.cn) account in the DBX plugin center to browse the problem library, view problem statements, choose a language, write code, and run or submit for judging.",
+      "name": "LeetCode 刷题",
+      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/icon.svg",
       "tags": [
         "leetcode",
         "algorithm",
@@ -355,11 +347,39 @@
         "host.workbench",
         "host.network:https://leetcode.cn"
       ],
-      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.1",
+      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.2",
       "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-09-21T17:11:51.572Z",
+          "releaseNotes": "0.2.2 修复 issue #3：代理环境下登录检测超时——插件后端访问 leetcode.cn 现在尊重系统代理环境变量（HTTP_PROXY/HTTPS_PROXY/ALL_PROXY/NO_PROXY）并加了连接/读取超时；本机 Chrome DevTools 调用单独走无代理通道，避免代理劫持 127.0.0.1；前端登录轮询超时由 15s 放宽到 28s 且瞬时错误自动重试。延续 0.2.1（会员题兜底、编辑器语法高亮）与 0.2.0（免粘贴浏览器登录、分页、做题页全屏、昵称显示）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-darwin-arm64.dbxp",
+              "sha256": "85b700ddf3d4fccb3604f27a267ef56921e6bb19829d952b684b0818641bc610",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2116180
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-linux-x64.dbxp",
+              "sha256": "e57665474eaa56cc3fe3e91302a93bfeea438aa50b35d47992d1cb153aa20004",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2403455
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-windows-x64.dbxp",
+              "sha256": "492361138f5898d6a1b466b3139df6a12c47fdbc1574db4600f55cea7dc926c4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2210539
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-09-20T10:58:35.159Z",
@@ -1711,21 +1731,13 @@
         "zh-CN": {
           "name": "LDAP Studio",
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
-        },
-        "en": {
-          "name": "LDAP Studio",
-          "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
-        },
-        "zh": {
-          "name": "LDAP Studio",
-          "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
         }
       }
     },
     {
       "id": "io.dbx.nintyapi",
       "name": "NintyAPI",
-      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
+      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
       "publisher": "nintycat",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/icon.svg",
@@ -1911,7 +1923,7 @@
       "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.80/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -1927,8 +1939,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.4.80",
+      "latestVersion": "0.5.0",
       "versions": [
+        {
+          "version": "0.5.0",
+          "releasedAt": "2026-09-21T17:20:28.636Z",
+          "releaseNotes": "First official store release: interactive SSH terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/io.dbx.ssh-0.5.0-darwin-arm64.dbxp",
+              "sha256": "1bf762e5416946ed11238a0a58d129fb0d4e5124aa79f9329e883ac5b5baf636",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6455289
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/io.dbx.ssh-0.5.0-darwin-x64.dbxp",
+              "sha256": "0aa6de8baddcdf78482a460e643916cdd6298222f2021deffc97bbea3261f9d5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6884907
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/io.dbx.ssh-0.5.0-linux-arm64.dbxp",
+              "sha256": "41a8a661339fbbd958f67170cf5e5d4cf439bfa86325ceb458800374c76092d8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6725534
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/io.dbx.ssh-0.5.0-linux-x64.dbxp",
+              "sha256": "040cd0eac1881e328fb9110a08d0ba58b820a70806ef8319fedacdce6a75625f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6964618
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/io.dbx.ssh-0.5.0-windows-x64.dbxp",
+              "sha256": "aa70a8eab5db1f6e01ca74a7ee0334b37a13cb4f6cec427e026ce70cc8e8f523",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7056868
+            }
+          ]
+        },
         {
           "version": "0.4.80",
           "releasedAt": "2026-09-20T02:29:17.017Z",
@@ -2228,14 +2282,6 @@
         "zh-CN": {
           "name": "SSH Terminal",
           "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
-        },
-        "zh": {
-          "name": "SSH Terminal",
-          "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
-        },
-        "en": {
-          "name": "SSH Terminal",
-          "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
         }
       }
     },
@@ -2439,14 +2485,6 @@
         "zh-CN": {
           "name": "DBX 工具箱",
           "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
-        },
-        "en": {
-          "name": "DBX Toolbox",
-          "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally."
-        },
-        "zh": {
-          "name": "DBX 工具箱",
-          "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
         }
       }
     },
@@ -2456,18 +2494,67 @@
       "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/icon.svg",
       "tags": [
         "prometheus",
         "monitoring",
         "observability"
       ],
       "permissions": [],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.6",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.7",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
       "license": "MIT",
-      "latestVersion": "0.1.6",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-09-21T17:15:52.273Z",
+          "releaseNotes": "优化采集目标、活动告警和规则筛选体验：新增可搜索下拉候选，支持鼠标与键盘选择具体项，并修复选择具体项后无法切回全部、规则候选无法点击的问题。候选列表最多展示 200 项，便于在大型 Prometheus 实例中快速定位。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-darwin-arm64.dbxp",
+              "sha256": "f6a5a46b1c37886bf5bdc210035de157aee8fdfb2d6afb19e3c2b84c37b9c205",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4494419
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-darwin-x64.dbxp",
+              "sha256": "3a22bf45a45ec735e0a87bab14037593611a5c5a70b2d10f7ffec416504df19c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4721100
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-linux-arm64.dbxp",
+              "sha256": "79bd7ff4776f768b0b443754889c58fa32330655def175afe9212609e3bd9530",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4472384
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-linux-x64.dbxp",
+              "sha256": "66d50f23d3aa8b5ee751a7eec921011315bed57673250a70fa924ac350f67d75",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4757059
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-windows-arm64.dbxp",
+              "sha256": "d13578458f30d0185ad09cfd1b5e9fa69e840372989c1f61f59cfa13d1abd848",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4466951
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-windows-x64.dbxp",
+              "sha256": "d0e9a73886c870621d277313020f191c9edb423c2bf8384fbc132f6a7fbcbd75",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4790015
+            }
+          ]
+        },
         {
           "version": "0.1.6",
           "releasedAt": "2026-09-20T15:57:23.928Z",
@@ -2683,14 +2770,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "ExcelX",
-          "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
-        },
-        "en": {
-          "name": "ExcelX",
-          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
-        },
-        "zh": {
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
         }
@@ -2925,7 +3004,7 @@
       "description": "S3-compatible object storage plugin for DBX.",
       "publisher": "t8y2",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/icon.svg",
       "tags": [
         "storage",
         "s3",
@@ -2938,8 +3017,57 @@
       "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
       "homepage": "https://github.com/t8y2/dbx-plugin-s3",
       "license": "Proprietary",
-      "latestVersion": "0.1.17",
+      "latestVersion": "0.1.18",
       "versions": [
+        {
+          "version": "0.1.18",
+          "releasedAt": "2026-09-21T09:39:05.710Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-darwin-arm64.dbxp",
+              "sha256": "3eea450db310ce39e1eaf2a2bbbcd9bc3256d9fe248d75f660a495a81f984bbb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6394418
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-darwin-x64.dbxp",
+              "sha256": "7d5b07aefec8a5d9522db2f793ee0fe3a2b7d3cc1e8a96e05d974dcfeaf5bd79",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6745309
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-linux-arm64.dbxp",
+              "sha256": "1fda78f8abcb9daf486ba86ed78f3253c1f83ece1be3f15c02e03353fbe1d38b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6309810
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-linux-x64.dbxp",
+              "sha256": "dd912aa269bff22b0b35a9f3e17bcd7587ef0cc1b95e971a9430c4f7dd71a8df",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6754811
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-windows-arm64.dbxp",
+              "sha256": "39a40e567c50ce055d91e5defeef3221c9093bfcab8d79557251acde0f6ce434",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6275063
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-windows-x64.dbxp",
+              "sha256": "835a0615a4a94c05756a4401cf220a45ceac46f7501a6beab7bc3b89b2ca9fa6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6765148
+            }
+          ]
+        },
         {
           "version": "0.1.17",
           "releasedAt": "2026-09-21T04:23:33.914Z",
@@ -4004,14 +4132,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Dev Tools",
-          "description": "沙箱离线运行，零权限——40 个开发工具，约 100KB：生成器（密码/二维码/条码/ID/RSA 密钥/TOTP/占位图）、编解码（Base64/Base58/URL/转义/Punycode/Data URI）、安全（哈希/HMAC/JWT/AES/证书解析）、文本工具（JSON/对比/正则/行处理/乱码修复）等。"
-        },
-        "en": {
-          "name": "Dev Tools",
-          "description": "Sandboxed, offline, zero permissions — 40 tools at ~100KB: generators (password/QR/barcode/ID/RSA/TOTP/placeholder), codecs (Base64/Base58/URL/escape/punycode/data-URI), crypto (hash/HMAC/JWT/AES/certificate), text tools (JSON/diff/regex/lines/mojibake) and more."
-        },
-        "zh": {
           "name": "Dev Tools",
           "description": "沙箱离线运行，零权限——40 个开发工具，约 100KB：生成器（密码/二维码/条码/ID/RSA 密钥/TOTP/占位图）、编解码（Base64/Base58/URL/转义/Punycode/Data URI）、安全（哈希/HMAC/JWT/AES/证书解析）、文本工具（JSON/对比/正则/行处理/乱码修复）等。"
         }
