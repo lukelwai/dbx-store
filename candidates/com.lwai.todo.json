@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "com.lwai.todo",
+  "publisher": "lwai",
+  "version": "0.1.8",
+  "name": "待办 Todo",
+  "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.8/assets/plugin.svg",
+  "tags": ["todo", "task", "gtd", "productivity", "calendar"],
+  "permissions": [],
+  "source": "https://github.com/lukelwai/dbx-todo/tree/0.1.8",
+  "homepage": "https://github.com/lukelwai/dbx-todo",
+  "license": "Apache-2.0",
+  "releaseNotes": "完善待办功能",
+  "localizations": {
+    "zh-CN": {
+      "name": "待办 Todo",
+      "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/lukelwai/dbx-todo/releases/download/0.1.8/com.lwai.todo-0.1.8-darwin-arm64.dbxp",
+      "sha256": "bb3867f9d4451dea71aa6ca9003bf0131bdee7f5a41500edebddc088d18ec271",
+      "size": 5583481
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/lukelwai/dbx-todo/releases/download/0.1.8/com.lwai.todo-0.1.8-linux-x64.dbxp",
+      "sha256": "7d718926f1fde026b25bc13a7ca886f215df9a6ec612ca84c4a7016bc157d47d",
+      "size": 5633573
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/lukelwai/dbx-todo/releases/download/0.1.8/com.lwai.todo-0.1.8-windows-x64.dbxp",
+      "sha256": "da0f83f334a953d17f985b260bccb73ca9058ba2eca34608545aaf6db0d9b897",
+      "size": 5703279
+    }
+  ]
+}
